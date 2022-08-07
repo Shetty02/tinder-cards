@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './component/Header';
+import Footer from './component/Footer';
+import TinderCards from './component/TinderCards';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // JSX is a JavaScript syntax extension that allows you to wrtie HTML
+    <>
+    {/* Types of components
+    1. Functional components
+    2.Class components
+   */}
+
+    <Header />
+
+    <TinderCards/>
+     <Footer/>
+           
+    </>
   );
 }
 
